@@ -24,7 +24,7 @@ mongoose.connect(connection_url,{
 })
 
 //api endpoints
-app.get('/',(req,res) => res.status(200).send("hello peter"));
+app.get('/',(req,res) => res.status(200).send("This is the backend node server to host tindercards from a mongodb cluster, check the front-end part for the result."));
 
 app.post("/tinder/cards", (req,res) => {
     const dbCard = req.body;
